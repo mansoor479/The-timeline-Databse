@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use('/', postRoutes);
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://mansoorabdullah580:mansoor0123@nodj6test.wtp7fip.mongodb.net/?retryWrites=true&w=majority&appName=nodj6tes', {
+mongoose.connect('mongodb+srv://mansoorabdullah580:@nodj6test.wtp7fip.mongodb.net/?retryWrites=true&w=majority&appName=nodj6tes', {
  
 }).then(() => {
   console.log('MongoDB connected');
