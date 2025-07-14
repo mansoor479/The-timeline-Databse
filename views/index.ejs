@@ -1,0 +1,17 @@
+<h1>Timeline</h1>
+<form action="/add" method="POST">
+  <textarea name="message" required></textarea>
+  <button type="submit">Post a message</button>
+</form>
+
+
+
+
+<% posts.forEach(post => { %>
+  <div>
+    <p><%= post.createdAt ? post.createdAt.toDateString() : '' %></p>
+    <p><%= post.message ? post.message.substring(0, 100) : 'No message provided' %></p>
+    <a href="/post/<%= post._id %>">See More</a>
+  </div>
+<% }) %>
+

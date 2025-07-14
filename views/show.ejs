@@ -1,0 +1,7 @@
+<h1>Timeline</h1>
+<p><%= post.createdAt.toDateString() %></p>
+<p><%= post.message %></p>
+<form action="/post/<%= post._id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete</button>
+</form>
+<a href="/edit/<%= post._id %>">Edit Post</a>
